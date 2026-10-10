@@ -11,7 +11,7 @@ Agent 跑长任务时有两个具体的麻烦。第一，你不知道它此刻�
 ## 快速开始
 
 ```bash
-dsh plugin --profile <profile> add github:4gr9sv96jw-ui/dsh-steer
+dsh plugin --profile <profile> add github:lyonleeeee/dsh-steer
 ```
 
 装完重启应用（`bundles` 只在启动时读一次）。之后会话头右上角会出现状态徽标和「指导」按钮。
@@ -20,7 +20,7 @@ dsh plugin --profile <profile> add github:4gr9sv96jw-ui/dsh-steer
 
 ```bash
 "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
-  plugin --profile desktop add github:4gr9sv96jw-ui/dsh-steer
+  plugin --profile desktop add github:lyonleeeee/dsh-steer
 ```
 
 ## 状态徽标
@@ -104,7 +104,7 @@ Long agent runs cause two specific problems. First, you cannot tell what the age
 ## Quick start
 
 ```bash
-dsh plugin --profile <profile> add github:4gr9sv96jw-ui/dsh-steer
+dsh plugin --profile <profile> add github:lyonleeeee/dsh-steer
 ```
 
 Restart the app afterwards (`bundles` are read once at startup). The status badge and a "Guide" button then appear in the session header.
@@ -113,7 +113,7 @@ The desktop app (DeepSeek Harness.app) manages its profile exclusively, so use t
 
 ```bash
 "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
-  plugin --profile desktop add github:4gr9sv96jw-ui/dsh-steer
+  plugin --profile desktop add github:lyonleeeee/dsh-steer
 ```
 
 ## The status badge

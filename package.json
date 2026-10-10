@@ -34,11 +34,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4gr9sv96jw-ui/dsh-steer.git"
+    "url": "git+https://github.com/lyonleeeee/dsh-steer.git"
   },
-  "homepage": "https://github.com/4gr9sv96jw-ui/dsh-steer#readme",
+  "homepage": "https://github.com/lyonleeeee/dsh-steer#readme",
   "bugs": {
-    "url": "https://github.com/4gr9sv96jw-ui/dsh-steer/issues"
+    "url": "https://github.com/lyonleeeee/dsh-steer/issues"
   },
   "dsh": {
     "bundle": {
