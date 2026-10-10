@@ -1,0 +1,23 @@
+{
+  "name": "@lyonlee/dsh-steer",
+  "version": "0.2.1",
+  "description": "Status badge + non-interrupting guidance for DeepSeek Harness: a live runtime snapshot in the session header, and one-click queue/steer delivery through the official admission channel.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "keywords": ["dsh-plugin", "cordis-plugin", "deepseek-harness", "status", "steer", "queue"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/4gr9sv96jw-ui/dsh-steer.git" },
+  "homepage": "https://github.com/4gr9sv96jw-ui/dsh-steer#readme",
+  "bugs": { "url": "https://github.com/4gr9sv96jw-ui/dsh-steer/issues" },
+  "engines": { "node": ">=22" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  }
+}
