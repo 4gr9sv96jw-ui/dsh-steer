@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+.DS_Store
+
+# 内部开发记录：含本机路径，不进公开仓库（npm 包也由 package.json 的 files 挡在外面）
+DEV-REPORT.md
