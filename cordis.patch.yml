@@ -1,4 +1,4 @@
 # dsh-steer bundle patch: host(状态+插话+SSE) + client(右上角插话/状态徽标)。
 - insert:
     - id: dsh-steer
-      name: '@lyon/dsh-steer'
+      name: '@lyonleeeee/dsh-steer'

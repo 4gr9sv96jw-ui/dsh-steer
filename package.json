@@ -1,5 +1,5 @@
 {
-  "name": "@lyon/dsh-steer",
+  "name": "@lyonleeeee/dsh-steer",
   "version": "0.1.0",
   "description": "Live status badge + non-interrupting in-flight guidance for DeepSeek Harness. · DSH 会话头实时状态徽标 + 运行中「侧边对话式指导」（不打断、小步边界被读；支持图片附件、插话历史与一键重发、中英双语）。",
   "type": "module",
