@@ -53,7 +53,7 @@ dsh plugin --profile <profile> add github:lyonleeeee/dsh-steer
 
 ## 为什么不提供排队和官方插话
 
-官方的 queue 和 steer 本质上都是「以用户身份发一条消息」——对话框本来就能发，官方队列栏本来就能排队。所以 v0.4.0 把这两条通道删掉了，插件只保留上面那条不打断的投递。
+官方的 queue 和 steer 本质上都是「以用户身份发一条消息」——对话框本来就能发，官方队列栏本来就能排队。所以 v0.1.0 把这两条通道删掉了，插件只保留上面那条不打断的投递。
 
 ## 数据通道
 
@@ -146,7 +146,7 @@ The UI language switches in the detail popover: Auto, 中文 or English. The cho
 
 ## Why there is no queue and no official steer
 
-The official queue and steer are both just "send a message as the user" — the composer already does that, and the official queue bar already queues. v0.4.0 removed both channels, leaving only the non-interrupting delivery described above.
+The official queue and steer are both just "send a message as the user" — the composer already does that, and the official queue bar already queues. v0.1.0 removed both channels, leaving only the non-interrupting delivery described above.
 
 ## Data channels
 
