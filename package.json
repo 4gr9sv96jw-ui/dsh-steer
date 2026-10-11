@@ -40,6 +40,9 @@
   "bugs": {
     "url": "https://github.com/lyonleeeee/dsh-steer/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
