@@ -8,6 +8,8 @@
 
 Agent 跑长任务时有两个具体的麻烦。第一，你不知道它此刻在做什么——「等待响应」和「真的卡住」看起来一模一样。第二，你发现方向不对时，只能等它做完，或者直接打断，没有中间选项。这个插件分别解决这两件事。
 
+![会话头实时状态徽标 + 运行中指导浮层（真机截图）](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-1-runtime-and-guidance.png)
+
 ## 快速开始
 
 ```bash
@@ -33,6 +35,8 @@ dsh plugin --profile <profile> add github:lyonleeeee/dsh-steer
 
 状态不猜。没有新进展时显示「暂无新增量」，实时源断开时显示「状态实时源断开」，而不是继续挂着上一次的阶段。请求失败只显示官方返回的 `failure.code`；只有 `llm/retry` 真的触发才显示重试，不写「可能是网络问题」这种无法证明的话。
 
+![点开徽标：运行状态诊断面板（阶段、步号 T4·S1、语言切换）](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-3-runtime-detail.png)
+
 ## 运行中指导
 
 这是插件的主要能力。你写一句话，它会在当前回合内、最近一次小步（一次推理或一次工具调用）结束的边界被读进上下文，任务继续往下跑——不打断、不重开、不等整轮结束。
@@ -48,6 +52,8 @@ dsh plugin --profile <profile> add github:lyonleeeee/dsh-steer
 - ✗ 未读取，回合已结束或消息被丢弃
 
 点任意一条可以把原文回填到输入框；未读取的可以一键重发，重发会带上原来的附件，不需要重新上传。历史只收本插件发出的插话，主对话框里的聊天记录不算。
+
+![指导浮层：插话历史标出在第几轮第几步被读取（✓ T1·S2）](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-2-guidance-history.png)
 
 界面语言在详情面板里切换，可选自动、中文、English。选择写在 `~/.dsh/dsh-steer.lang`，不使用 localStorage。
 
@@ -101,6 +107,8 @@ A DeepSeek Harness plugin: a live status badge in the session header, plus a way
 
 Long agent runs cause two specific problems. First, you cannot tell what the agent is doing right now — "waiting for a response" and "genuinely stuck" look identical. Second, when you notice the direction is wrong, your only options are to wait for the whole turn or to interrupt it. There is nothing in between. This plugin addresses both.
 
+![Live status badge in the session header with the guidance popover open (real capture)](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-1-runtime-and-guidance.png)
+
 ## Quick start
 
 ```bash
@@ -126,6 +134,8 @@ Elapsed time is computed by a local clock in the client — the host only sends 
 
 The badge does not guess. With no new progress it shows "no new progress"; if the live source drops it shows "live source disconnected" rather than keeping a stale phase on screen. A failed request shows the official `failure.code`; a retry appears only when `llm/retry` actually fires, never as a guess about the network.
 
+![Clicking the badge: the runtime detail panel (phase, step T4·S1, language switch)](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-3-runtime-detail.png)
+
 ## In-flight guidance
 
 This is the plugin's main capability. You write a sentence, and it is read into context inside the current turn, at the end of the nearest small step (one reasoning block or one tool call). The task keeps running: no interrupt, no restart, no waiting for the turn to finish.
@@ -141,6 +151,8 @@ The popover lists the guidance sent in this session, each entry marked with wher
 - ✗ not read — the turn ended, or the message was discarded
 
 Click any entry to put its text back in the input. Entries that were never read can be resent in one click, and the resend carries the original attachments instead of uploading them again. The list only contains guidance sent from this plugin; messages from the main composer are not included.
+
+![The guidance popover: history marks the turn and step where each entry was read (✓ T1·S2)](https://raw.githubusercontent.com/lyonleeeee/dsh-steer/HEAD/assets/screenshot-2-guidance-history.png)
 
 The UI language switches in the detail popover: Auto, 中文 or English. The choice is stored in `~/.dsh/dsh-steer.lang`; localStorage is not used.
 
